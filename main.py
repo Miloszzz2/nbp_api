@@ -1,12 +1,12 @@
-from showCurrencyPrice import *
-from showCurrencyPrice30days import *
-from showGoldPrice30days import *
-from saveCurrencyPriceToCsv import *
-from saveCurrencyPriceToCsv30days import *
-from saveGoldPriceToCsv import *
-from saveGoldPriceToCsv30Days import *
-from createChartForCurrency import *
-from createChartForGoldPrice import *
+from resources.showCurrencyPrice import *
+from resources.showCurrencyPrice30days import *
+from resources.showGoldPrice30days import *
+from resources.saveCurrencyPriceToCsv import *
+from resources.saveCurrencyPriceToCsv30days import *
+from resources.saveGoldPriceToCsv import *
+from resources.saveGoldPriceToCsv30Days import *
+from resources.createChartForCurrency import *
+from resources.createChartForGoldPrice import *
 response = requests.get('https://api.nbp.pl/api/exchangerates/tables/A?format=json')
 all_currencies_codes = []
 for element in response.json()[0]["rates"]:
